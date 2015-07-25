@@ -1,0 +1,41 @@
+*~
+.DS_Store
+Pods/
+*Podfile.lock
+
+# Criado por https://www.gitignore.io
+
+### Swift ###
+# Xcode
+#
+construir /
+* .pbxuser
+! Default.pbxuser
+* .mode1v3
+! Default.mode1v3
+* .mode2v3
+! Default.mode2v3
+* .perspectivev3
+! Default.perspectivev3
+xcuserdata
+* .xccheckout
+* .moved-Aside
+DerivedData
+* .hmap
+* .ipa
+* .xcuserstate
+
+# CocoaPods
+#
+# Recomendamos contra adicionar o diretório Pods à sua .gitignore. Porém
+# Você deve julgar por si mesmo, os prós e contras são mencionados em:
+# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+#
+# Pods /
+
+# Carthage
+#
+# Adicione essa linha se você quiser evitar o check-in de código fonte de dependências Carthage.
+# Carthage / checkouts
+
+Carthage / Construção

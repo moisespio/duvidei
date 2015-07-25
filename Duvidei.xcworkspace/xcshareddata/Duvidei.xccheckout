@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D3ABF779-C296-460D-8446-CF1661A546D7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Duvidei</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EF74D4AB7125240A92B424CF61F3970022F585FE</key>
+		<string>https://github.com/moisespio/duvidei.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Duvidei.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EF74D4AB7125240A92B424CF61F3970022F585FE</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/moisespio/duvidei.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EF74D4AB7125240A92B424CF61F3970022F585FE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EF74D4AB7125240A92B424CF61F3970022F585FE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>duvidei</string>
+		</dict>
+	</array>
+</dict>
+</plist>
