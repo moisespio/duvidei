@@ -22,6 +22,7 @@ class PostManager: PFObject, PFSubclassing {
         return "Post"
     }
 
+    @NSManaged var caption: String?
     @NSManaged var file: PFFile?
     @NSManaged var parent: PostManager?
     @NSManaged var tags: NSArray?
