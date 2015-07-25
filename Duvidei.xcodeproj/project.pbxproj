@@ -92,7 +92,6 @@
 		8019FF8C1B640ECD00D32DEF /* Duvidei */ = {
 			isa = PBXGroup;
 			children = (
-				BF6653F71B64191B00673578 /* bridging-header.h */,
 				8019FF8F1B640ECD00D32DEF /* AppDelegate.swift */,
 				8019FF961B640ECD00D32DEF /* Images.xcassets */,
 				BF6653F61B64135300673578 /* Model */,
@@ -106,6 +105,7 @@
 		8019FF8D1B640ECD00D32DEF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BF6653F71B64191B00673578 /* bridging-header.h */,
 				8019FF8E1B640ECD00D32DEF /* Info.plist */,
 			);
 			name = "Supporting Files";
