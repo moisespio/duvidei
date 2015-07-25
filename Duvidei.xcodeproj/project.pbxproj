@@ -13,6 +13,10 @@
 		8019FF9A1B640ECD00D32DEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8019FF981B640ECD00D32DEF /* LaunchScreen.xib */; };
 		8019FFA61B640ECD00D32DEF /* DuvideiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8019FFA51B640ECD00D32DEF /* DuvideiTests.swift */; };
 		BAD66DD69A44A5C0F5D037EA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3C241585781D9BD8140B02 /* libPods.a */; };
+		BF6653F91B641FAB00673578 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6653F81B641FAB00673578 /* UserManager.swift */; };
+		BF6653FB1B641FD300673578 /* PostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6653FA1B641FD300673578 /* PostManager.swift */; };
+		BF6653FD1B6420FD00673578 /* LikeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6653FC1B6420FD00673578 /* LikeManager.swift */; };
+		BF6653FF1B64215E00673578 /* TagManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6653FE1B64215E00673578 /* TagManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,10 @@
 		8019FFA51B640ECD00D32DEF /* DuvideiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuvideiTests.swift; sourceTree = "<group>"; };
 		8E3C241585781D9BD8140B02 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6653F71B64191B00673578 /* bridging-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "bridging-header.h"; sourceTree = "<group>"; };
+		BF6653F81B641FAB00673578 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserManager.swift; path = Model/UserManager.swift; sourceTree = "<group>"; };
+		BF6653FA1B641FD300673578 /* PostManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostManager.swift; path = Model/PostManager.swift; sourceTree = "<group>"; };
+		BF6653FC1B6420FD00673578 /* LikeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LikeManager.swift; path = Model/LikeManager.swift; sourceTree = "<group>"; };
+		BF6653FE1B64215E00673578 /* TagManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TagManager.swift; path = Model/TagManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +155,10 @@
 		BF6653F61B64135300673578 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BF6653F81B641FAB00673578 /* UserManager.swift */,
+				BF6653FA1B641FD300673578 /* PostManager.swift */,
+				BF6653FC1B6420FD00673578 /* LikeManager.swift */,
+				BF6653FE1B64215E00673578 /* TagManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -294,7 +306,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF6653FD1B6420FD00673578 /* LikeManager.swift in Sources */,
+				BF6653F91B641FAB00673578 /* UserManager.swift in Sources */,
+				BF6653FF1B64215E00673578 /* TagManager.swift in Sources */,
 				8019FF901B640ECD00D32DEF /* AppDelegate.swift in Sources */,
+				BF6653FB1B641FD300673578 /* PostManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
