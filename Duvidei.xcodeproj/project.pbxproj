@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8019FF901B640ECD00D32DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8019FF8F1B640ECD00D32DEF /* AppDelegate.swift */; };
-		8019FF921B640ECD00D32DEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8019FF911B640ECD00D32DEF /* ViewController.swift */; };
 		8019FF951B640ECD00D32DEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8019FF931B640ECD00D32DEF /* Main.storyboard */; };
 		8019FF971B640ECD00D32DEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8019FF961B640ECD00D32DEF /* Images.xcassets */; };
 		8019FF9A1B640ECD00D32DEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8019FF981B640ECD00D32DEF /* LaunchScreen.xib */; };
@@ -32,7 +31,6 @@
 		8019FF8A1B640ECD00D32DEF /* Duvidei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duvidei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8019FF8E1B640ECD00D32DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8019FF8F1B640ECD00D32DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8019FF911B640ECD00D32DEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8019FF941B640ECD00D32DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8019FF961B640ECD00D32DEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8019FF991B640ECD00D32DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -94,10 +92,10 @@
 			isa = PBXGroup;
 			children = (
 				8019FF8F1B640ECD00D32DEF /* AppDelegate.swift */,
-				8019FF911B640ECD00D32DEF /* ViewController.swift */,
-				8019FF931B640ECD00D32DEF /* Main.storyboard */,
 				8019FF961B640ECD00D32DEF /* Images.xcassets */,
-				8019FF981B640ECD00D32DEF /* LaunchScreen.xib */,
+				BF6653F61B64135300673578 /* Model */,
+				BF6653F51B64134900673578 /* View */,
+				BF6653F41B64134000673578 /* Controller */,
 				8019FF8D1B640ECD00D32DEF /* Supporting Files */,
 			);
 			path = Duvidei;
@@ -126,6 +124,29 @@
 				8019FFA41B640ECD00D32DEF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF6653F41B64134000673578 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BF6653F51B64134900673578 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8019FF981B640ECD00D32DEF /* LaunchScreen.xib */,
+				8019FF931B640ECD00D32DEF /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BF6653F61B64135300673578 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		DD40E8631C9047D65D10C8DA /* Frameworks */ = {
@@ -271,7 +292,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8019FF921B640ECD00D32DEF /* ViewController.swift in Sources */,
 				8019FF901B640ECD00D32DEF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
