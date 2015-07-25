@@ -19,6 +19,9 @@
 		BF6653FB1B641FD300673578 /* PostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6653FA1B641FD300673578 /* PostManager.swift */; };
 		BF6653FD1B6420FD00673578 /* LikeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6653FC1B6420FD00673578 /* LikeManager.swift */; };
 		BF6653FF1B64215E00673578 /* TagManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6653FE1B64215E00673578 /* TagManager.swift */; };
+		BF6654031B6437F200673578 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6654021B6437F200673578 /* CameraPreview.swift */; };
+		BF6654051B64382800673578 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6654041B64382800673578 /* CameraViewController.swift */; };
+		BF6654071B64479400673578 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6654061B64479400673578 /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		BF6653FA1B641FD300673578 /* PostManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostManager.swift; path = Model/PostManager.swift; sourceTree = "<group>"; };
 		BF6653FC1B6420FD00673578 /* LikeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LikeManager.swift; path = Model/LikeManager.swift; sourceTree = "<group>"; };
 		BF6653FE1B64215E00673578 /* TagManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TagManager.swift; path = Model/TagManager.swift; sourceTree = "<group>"; };
+		BF6654021B6437F200673578 /* CameraPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraPreview.swift; path = Controller/CameraPreview.swift; sourceTree = "<group>"; };
+		BF6654041B64382800673578 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = Controller/CameraViewController.swift; sourceTree = "<group>"; };
+		BF6654061B64479400673578 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 			children = (
 				BF6653F71B64191B00673578 /* bridging-header.h */,
 				8019FF8E1B640ECD00D32DEF /* Info.plist */,
+				BF6654061B64479400673578 /* Util.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 		BF6653F41B64134000673578 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BF6654011B64375100673578 /* Camera */,
 				807292061B64248100947390 /* FeedViewController.swift */,
 				807292081B6424AA00947390 /* PostViewController.swift */,
 			);
@@ -167,6 +175,15 @@
 				BF6653FE1B64215E00673578 /* TagManager.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		BF6654011B64375100673578 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				BF6654041B64382800673578 /* CameraViewController.swift */,
+				BF6654021B6437F200673578 /* CameraPreview.swift */,
+			);
+			name = Camera;
 			sourceTree = "<group>";
 		};
 		DD40E8631C9047D65D10C8DA /* Frameworks */ = {
@@ -313,12 +330,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF6653FD1B6420FD00673578 /* LikeManager.swift in Sources */,
+				BF6654031B6437F200673578 /* CameraPreview.swift in Sources */,
 				BF6653F91B641FAB00673578 /* UserManager.swift in Sources */,
 				807292091B6424AA00947390 /* PostViewController.swift in Sources */,
 				BF6653FF1B64215E00673578 /* TagManager.swift in Sources */,
 				8019FF901B640ECD00D32DEF /* AppDelegate.swift in Sources */,
 				807292071B64248100947390 /* FeedViewController.swift in Sources */,
+				BF6654071B64479400673578 /* Util.swift in Sources */,
 				BF6653FB1B641FD300673578 /* PostManager.swift in Sources */,
+				BF6654051B64382800673578 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

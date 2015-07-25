@@ -41,4 +41,33 @@ class LikeManager: PFObject, PFSubclassing {
             }
         }
     }
+
+    func likePost(likeControl: LikeManager, callback: (error: NSError?) -> ()) {
+        var query = PFObject(className: LikeManager.parseClassName())
+        
+        query["user"] = PFUser.currentUser()
+        query["post"] = likeControl.post!
+        
+        query.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                callback(error: nil)
+            } else {
+                callback(error: error)
+            }
+        }
+    }
+
+    func unLikePost(likeControl: LikeManager, callback: (error: NSError?) -> ()) {
+        let query = LikeManager(withoutDataWithObjectId: likeControl.objectId!)
+        
+        query.deleteInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                callback(error: nil)
+            } else {
+                callback(error: error)
+            }
+        }
+    }
 }

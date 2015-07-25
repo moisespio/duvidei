@@ -23,4 +23,17 @@ class TagManager: PFObject, PFSubclassing {
     }
 
     @NSManaged var name: String?
+
+    func createTag(tagControl: TagManager, callback: (error: NSError?) -> ()) {
+        var query = PFObject(className: TagManager.parseClassName())
+        
+        query.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                callback(error: nil)
+            } else {
+                callback(error: error)
+            }
+        }
+    }
 }

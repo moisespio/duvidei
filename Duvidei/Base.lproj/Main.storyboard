@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="st2-Nm-d9C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ok8-Pk-21I">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Feed View Controller-->
@@ -43,6 +44,99 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZH5-6T-kQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1094" y="1762"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="9jB-Yz-9ab">
+            <objects>
+                <viewController id="ok8-Pk-21I" customClass="CameraViewController" customModule="Duvidei" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HDe-SH-fo6"/>
+                        <viewControllerLayoutGuide type="bottom" id="HGU-qQ-1s3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R4b-JS-AuB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRr-Nh-Z8l" customClass="CameraPreview" customModule="Duvidei" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.098039215690000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qRr-Nh-Z8l" secondAttribute="height" multiplier="1:1" id="Wxi-mJ-o7x"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpi-RF-DGb">
+                                <rect key="frame" x="16" y="608" width="37" height="30"/>
+                                <state key="normal" title="Flash">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFlashMode:" destination="ok8-Pk-21I" eventType="touchUpInside" id="h8f-nK-Qiv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdA-Mq-24C">
+                                <rect key="frame" x="16" y="646" width="30" height="30"/>
+                                <state key="normal" title="Flip">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCamera:" destination="ok8-Pk-21I" eventType="touchUpInside" id="hZX-jz-WEe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qqj-Pw-fUM">
+                                <rect key="frame" x="16" y="684" width="36" height="30"/>
+                                <state key="normal" title="Snap">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takeStillImage:" destination="ok8-Pk-21I" eventType="touchUpInside" id="2Gt-ev-Law"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qRr-Nh-Z8l" firstAttribute="leading" secondItem="R4b-JS-AuB" secondAttribute="leading" id="5zS-v4-Npt"/>
+                            <constraint firstItem="qRr-Nh-Z8l" firstAttribute="top" secondItem="R4b-JS-AuB" secondAttribute="top" id="o8t-vH-V6z"/>
+                            <constraint firstAttribute="trailing" secondItem="qRr-Nh-Z8l" secondAttribute="trailing" id="vaL-R8-ejz"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="900"/>
+                    <connections>
+                        <outlet property="flashButton" destination="bpi-RF-DGb" id="eso-k2-yAW"/>
+                        <outlet property="flipButton" destination="wdA-Mq-24C" id="ldv-OK-3NC"/>
+                        <outlet property="previewView" destination="qRr-Nh-Z8l" id="jc6-H1-naE"/>
+                        <outlet property="snapButton" destination="Qqj-Pw-fUM" id="jJO-PV-lT4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UB4-wu-J8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="367" y="2644"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ud3-Hp-5J2">
+            <objects>
+                <viewController id="Rov-cd-qGp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ciX-AW-7ED"/>
+                        <viewControllerLayoutGuide type="bottom" id="7gh-Qv-lEz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IDt-Pf-A6C">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fy4-ZD-Fv2">
+                                <rect key="frame" x="226" y="550" width="148" height="30"/>
+                                <state key="normal" title="Entrar com Facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Og8-lM-3ns" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="367" y="273"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bmx-hR-ytm">
