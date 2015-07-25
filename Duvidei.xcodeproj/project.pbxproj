@@ -38,6 +38,7 @@
 		8019FFA41B640ECD00D32DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8019FFA51B640ECD00D32DEF /* DuvideiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuvideiTests.swift; sourceTree = "<group>"; };
 		8E3C241585781D9BD8140B02 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6653F71B64191B00673578 /* bridging-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "bridging-header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 		8019FF8C1B640ECD00D32DEF /* Duvidei */ = {
 			isa = PBXGroup;
 			children = (
+				BF6653F71B64191B00673578 /* bridging-header.h */,
 				8019FF8F1B640ECD00D32DEF /* AppDelegate.swift */,
 				8019FF961B640ECD00D32DEF /* Images.xcassets */,
 				BF6653F61B64135300673578 /* Model */,
@@ -425,6 +427,7 @@
 				INFOPLIST_FILE = Duvidei/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Duvidei/bridging-header.h";
 			};
 			name = Debug;
 		};
@@ -436,6 +439,7 @@
 				INFOPLIST_FILE = Duvidei/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Duvidei/bridging-header.h";
 			};
 			name = Release;
 		};
